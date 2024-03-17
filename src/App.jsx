@@ -12,7 +12,7 @@ function App() {
   const [isAuth, setIsAuth] = useState(cookies.get("auth-token")); //true or false reading from cookies
   const [room, setRoom] = useState(null);
   const roomInputRef = useRef(null);
-  if (!isAuth) {
+  if (isAuth) {
     return (
       <>
         <Auth setIsAuth={setIsAuth}/>

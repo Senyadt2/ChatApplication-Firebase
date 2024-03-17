@@ -9,7 +9,7 @@ const Auth = ({setIsAuth}) => {
     try{
 
       const result =  await signInWithPopup(auth,provider);
-      console.log(result);
+    
       cookies.set('auth-token',result.user.refreshToken);
       setIsAuth(true);
     }
