@@ -39,7 +39,7 @@ const Chat = ({room}) => {
   return (
     <div className='chat-app'>
         <div className='header'>
-            <h1>Welcome to:{room.toUpperCase()} </h1>
+            <h1 className='chat-head'>Welcome to:{room.toUpperCase()} </h1>
         </div>
         <div className='messages'>{messages.map((message)=> <div className='message' key={message.id}>
             <span className='user'>{message.user}</span>
