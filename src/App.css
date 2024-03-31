@@ -1,12 +1,12 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;   
+  box-sizing: border-box;
   color: aliceblue;
 }
-input[type="text"]{
-    background-color: whitesmoke !important;
-    color: black !important;
+input[type="text"] {
+  background-color: whitesmoke !important;
+  color: black !important;
 }
 .auth {
   width: 100%;
@@ -14,53 +14,63 @@ input[type="text"]{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(2,0,36);
-background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(9,9,10,1) 0%, rgba(41,41,43,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    4deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 10, 1) 0%,
+    rgba(41, 41, 43, 1) 100%
+  );
   flex-direction: column;
   gap: 20px;
-  font-size: 40px;
+
   font-weight: 700;
 }
 .auth > p:first-child {
-    background: #5382ED;
-    background: linear-gradient(to right, #5382ED 0%, #D86572 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+  background: #5382ed;
+  background: linear-gradient(to right, #5382ed 0%, #d86572 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
 }
 .auth > p:not(:first-child) {
-    background: #444746;
- 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+  background: #444746;
+  font-size: 32px;
+  padding: 10px  0px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .auth > button {
-    border-radius: 1rem;
-    padding: 5px 10px;
-    font-size: 25px;
-    background: #969696;
-    background: linear-gradient(to left, #969696 0%, #A4A4A4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-    
-    
-
-  
+  border-radius: 1rem;
+  padding: 5px 10px;
+  font-size: 25px;
+  background: #969696;
+  background: linear-gradient(to left, #969696 0%, #a4a4a4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .container {
   width: 100%;
   height: 95vh;
-  background: rgb(2,0,36);
-  background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(9,9,10,1) 0%, rgba(41,41,43,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    4deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 10, 1) 0%,
+    rgba(41, 41, 43, 1) 100%
+  );
 }
 .room {
   width: 100%;
   height: 100%;
-  background: rgb(2,0,36);
-  background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(9,9,10,1) 0%, rgba(41,41,43,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    4deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 10, 1) 0%,
+    rgba(41, 41, 43, 1) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,16 +91,30 @@ background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(9,9,10,1) 0%, rgba(41,
   height: 10%;
   padding: 5px 10px;
   border-radius: 1rem;
-  background: rgb(2,0,36);
-background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(9,9,10,1) 0%, rgba(41,41,43,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    4deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 10, 1) 0%,
+    rgba(41, 41, 43, 1) 100%
+  );
 }
 
 .signout {
   padding: 10px 10px;
-  background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(9,9,10,1) 0%, rgba(41,41,43,1) 100%);
+  background: linear-gradient(
+    4deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 10, 1) 0%,
+    rgba(41, 41, 43, 1) 100%
+  );
   justify-content: center;
   align-items: center;
   display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  gap: 20px;
 }
 .signout > button {
   padding: 5px 10px;
@@ -99,6 +123,52 @@ background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(9,9,10,1) 0%, rgba(41,
 }
 
 @media screen and (max-width: 425px) {
+  .auth {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      4deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 10, 1) 0%,
+      rgba(41, 41, 43, 1) 100%
+    );
+    flex-direction: column;
+    gap: 20px;
+    
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .auth > p:first-child {
+    background: #5382ed;
+    background: linear-gradient(to right, #5382ed 0%, #d86572 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    padding: 2px 10px;
+  }
+  .auth > p:not(:first-child) {
+    background: #444746;
+    font-size: 26px;
+    padding: 10px 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .auth > button {
+    border-radius: 1rem;
+    padding: 5px 10px;
+    font-size: 18px;
+    background: #969696;
+    background: linear-gradient(to left, #969696 0%, #a4a4a4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .inputChat {
     font-size: 14px;
 

@@ -25,6 +25,10 @@ function App() {
       setIsAuth(false);
       setRoom(null);
   }
+  const getBack = ()=>{
+    window.location.reload();
+  }
+
   return (
     <>
       {room ? (
@@ -34,13 +38,14 @@ function App() {
         //UI to take input the chat 
         <div className="container">
           <div className="room">
-            <label >Enter Room Name</label>
+            <label style={{fontSize: "42px;"}} >Enter Room Name</label>
             <input type="text" className="inputChat"  ref={roomInputRef}/>
             <button className="EnterChatbtn" onClick={()=>setRoom(roomInputRef.current.value)}>Enter Chat</button>
           </div>
         </div>
       )}
       <div className="signout">
+        <button onClick={getBack} >Go Back</button>
         <button onClick={signUserOut}>Sign Out</button>
       </div>
     </>
