@@ -119,5 +119,15 @@
   }
   .new-message-form {
     display: flex;
+    margin-bottom: 10px;
+  }
+  .send-button {
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    border-radius: 2rem;
+    background-color: rgba(79, 82, 82, 0.404);
+    margin-left: 10px;
+    color: #fff;
   }
 }

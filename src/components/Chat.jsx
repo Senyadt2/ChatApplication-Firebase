@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {addDoc,collection,serverTimestamp,onSnapshot,query, where, orderBy} from 'firebase/firestore';
 import { auth,db } from '../firebase-config';
 import "../Sytle/Chat.css"
-
+import { IoIosSend } from "react-icons/io";
 
 
 const Chat = ({room}) => {
@@ -47,7 +47,7 @@ const Chat = ({room}) => {
         </div>)}</div>
         <form onSubmit={handleSubmit} className='new-message-form' action="">
             <input type="text" className='new-message-input' value={newMessage} placeholder='Type your message here' onChange={(e)=>setNewMessage(e.target.value)}/>
-            <button  type='submit' className='send-button'>Send</button>
+            <button  type='submit' className='send-button'><IoIosSend /></button>
         </form>
         
     </div>
